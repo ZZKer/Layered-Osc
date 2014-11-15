@@ -2,27 +2,27 @@
 /**
  * test
  * this test uses triliniar as the oscolation,
- * but can use anything, really, maybe, if it worked right...
+ * but can use any oscolation function.
  * 
- * CURRENTLY BROKEN FOR SOME REASON
+ * TODO Be able to give oscolation function
  */
 
-import layOsc from './index';
+import { layOsc } from './index';
 
-//top note
-var topn = 440;
+//top frequency
+var topf = 420;
 
-//bottom note
-var botn = 400;
+//bottom frequency
+var botf = 400;
 
 //note variation
 var x = 1;
 
 //volume
-var v = 0.1;
+var v = 0.01;
 
 export function dsp(t) {
-  var sound = layOsc(t, topn, botn, x);
+  var sound = layOsc(t, topf, botf, x);
   
     return v * sound;
   }
