@@ -5,7 +5,7 @@
  * but can use anything, really, maybe, if it worked right...
  */
 
-import LayOsc from 'ZZKer/Layered-Osc';
+import { layOsc } from './index';
 
 //top note
 var topn = 440;
@@ -20,5 +20,7 @@ var x = 1;
 var v = 0.1;
 
 export function dsp(t) {
-    return v * LayOsc(topn, botn, x);
+  var sound = layOsc(t, topn, botn, x);
+  
+    return v * sound;
   }
