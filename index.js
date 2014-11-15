@@ -5,6 +5,8 @@
  * @ desc Layers oscolations every x notes from top note to bottom note.
  */
  
+ import tri from 'opendsp/osc';
+ 
  /**
   * top - the top layered note
   * bottom - the bottom layered note
@@ -14,7 +16,7 @@
  export function LOsc(top, bottom, x, type){
     var output = 0;
     for(var i=top; i >= bottom; i = i - x) {
-      output = output + type(t, i);
+      output = output + tri(t, i);
     }
     return output;
   }
