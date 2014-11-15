@@ -20,5 +20,5 @@ var x = 1;
 var v = 0.1;
 
 export function dsp(t) {
-    return v * LOsc(topn, botn, x, tri);
+    return v * LOsc(topn, botn, x);
   }
