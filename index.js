@@ -7,9 +7,9 @@
  
  import tri from 'opendsp/osc';
  
- export function layOsc(t, top, bottom, x){
+ export function layOsc(t, topn, bottomn, x){
     var output = 0;
-    for(var i=top; i >= bottom; i = i - x){
+    for(var i=topn; i >= bottomn; i = i - x){
       output = output + tri(t, i);
     }
     return output;

@@ -5,7 +5,7 @@
  * but can use anything, really, maybe, if it worked right...
  */
 
-import { layOsc } from './index';
+import layOsc from './index';
 
 //top note
 var topn = 440;
