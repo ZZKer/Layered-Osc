@@ -3,6 +3,8 @@
  * test
  * this test uses triliniar as the oscolation,
  * but can use anything, really, maybe, if it worked right...
+ * 
+ * CURRENTLY BROKEN FOR SOME REASON
  */
 
 import layOsc from './index';
