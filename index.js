@@ -7,13 +7,6 @@
  
  import tri from 'opendsp/osc';
  
- /**
-  * top - the top layered note
-  * bottom - the bottom layered note
-  * x - the variation when adding note layers
-  * type - the type of oscolation
-  */
-
  export function LayOsc(top, bottom, x){
     var output = 0;
     for(var i=top; i >= bottom; i = i - x) {
