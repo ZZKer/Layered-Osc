@@ -11,12 +11,10 @@
   * x - the variation when adding note layers
   * type - the type of oscolation
   */
- export function LOsc(top, bottom, x, type){
+ export function LayOsc(top, bottom, x, type){
     var output = 0;
     for(var i=top; i >= bottom; i = i - x) {
       output = output + type(t, i);
     }
     return output;
   }
-  
-  

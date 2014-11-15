@@ -5,7 +5,7 @@
  * but can use anything, really.
  */
 import tri from 'opendsp/osc';
-import LOsc from './index';
+import LayOsc from 'ZZKer/Layered-Osc';
 
 //top note
 var topn = 440;
@@ -20,5 +20,5 @@ var x = 1;
 var v = 0.1;
 
 export function dsp(t) {
-    return v * LOsc(topn, botn, x, tri);
+    return v * LayOsc(topn, botn, x, tri);
   }
