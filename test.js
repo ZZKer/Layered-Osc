@@ -4,7 +4,7 @@
  * this test uses triliniar as the oscolation,
  * but can use anything, really.
  */
-import tri from 'opendsp/osc/index';
+import tri from 'opendsp/osc';
 import LOsc from './index';
 
 //top note
