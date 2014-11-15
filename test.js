@@ -4,6 +4,7 @@
  * this test uses triliniar as the oscolation,
  * but can use anything, really.
  */
+import tri from 'opendsp/osc';
 import LOsc from './index';
 
 //top note
@@ -19,5 +20,5 @@ var x = 1;
 var v = 0.1;
 
 export function dsp(t) {
-    return v * LOsc(topn, botn, x);
+    return v * LOsc(topn, botn, x, tri);
   }
