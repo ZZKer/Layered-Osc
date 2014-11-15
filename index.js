@@ -13,7 +13,7 @@
   */
  export function LOsc(top, bottom, x, type){
     var output = 0;
-    for(var i=top; i >= bottom; i -= x) {
+    for(var i=top; i >= bottom; i = i - x) {
       output = output + type(t, i);
     }
     return output;
