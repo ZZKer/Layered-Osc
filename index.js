@@ -4,7 +4,7 @@
  * @author ZZKer
  */
  
- import { sin, saw, ramp, tri, sqr, noise } from './index';
+ import { sin, saw, ramp, tri, sqr, noise } from 'opendsp/osc';
 
   export function LOsc(top, bottom, type){
     var output = 0;
