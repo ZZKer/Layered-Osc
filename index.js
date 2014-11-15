@@ -2,8 +2,9 @@
 /**
  * @module Layered Osc
  * @author ZZKer
- * @desc Layers oscolations every x frequencies
- *    from top f to bottom f.
+ * @desc Layered Oscolations
+ * Layers oscolations every x frequencies from topf to
+ *  bottomf
  * 
  * Types Of Sounds
  *  With smaller ranges within normal note frequencies,
